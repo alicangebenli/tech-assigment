@@ -53,8 +53,8 @@ const HomeScreen: React.FC<Props> = () => {
             <header>Tech Example</header>
             <Search onChangeInput={onChangeHandle}/>
             {!!listData.length && <List data={listData}/>}
-            {!listData.length && !loading && <NoContent text="Herhangi bir sonuç bulunamadı" />}
-            {loading && <NoContent text="Yükleniyor..." />}
+            {!listData.length && !loading && <NoContent text="No results found." />}
+            {loading && <NoContent text="Loading..." />}
         </div>
     );
 }
